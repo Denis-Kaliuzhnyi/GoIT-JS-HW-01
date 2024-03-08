@@ -1,21 +1,12 @@
-let contentWidth = 50;
-let paddingX = 8;
-let border = 4;
-let getElementWidth = contentWidth + (paddingX * 2) + (border * 2);
-console.log(getElementWidth);
+let getElementWidth = function (content, padding, border) {
+    content = Number.parseFloat;
+    let padding = Number.parseFloat;
+    let border = Number.parseFloat;
+    
+    return content + padding +border;
+}
+console.log(getElementWidth("50px", "8px", "4px")); // 74
 
-contentWidth = 60;
-paddingX = 12;
-border = 8.5;
-getElementWidth = contentWidth + (paddingX * 2) + (border * 2);
-console.log(getElementWidth);
-
-
-contentWidth = 200;
-paddingX = 0;
-border = 0;
-getElementWidth = contentWidth + (paddingX * 2) + (border * 2);
-console.log(getElementWidth);
 
 
 
